@@ -1,0 +1,4 @@
+@mixin titleHighlightBorder($color: var(--accent-color), $size: 10px){
+  border-left: $size solid $color;
+  padding-left: 20px;
+}

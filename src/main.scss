@@ -1,0 +1,21 @@
+@use "./scss/styles";
+// THIS IS NECESSARY TO IMPORT THE SCSS CODEBASE
+@use "./scss/mixins/typography";
+
+.main {
+  @extend .container;
+
+  h1:first-child {
+    @include typography.titleHighlightBorder();
+  }
+
+  .buttons-container {
+    margin-bottom: var(--margin-default);
+    padding: var(--margin-default);
+    border: 1px solid var(--accent-color);
+
+    &.alternative {
+      background-color: var(--text-color);
+    }
+  }
+}
